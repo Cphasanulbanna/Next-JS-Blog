@@ -1,8 +1,13 @@
+import NavBar from '@/components/NavBar'
 import React from 'react'
 
-const layout = ({children}: {children: React.ReactNode}) => {
+
+const layout = ({children}: Readonly<{children: React.ReactNode}>) => {
   return (
-    <div>{children}</div>
+    <main className='font-work-sans'>
+        <NavBar />
+        {children}
+        </main>
   )
 }
 
