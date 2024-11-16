@@ -8,7 +8,7 @@ import { auth, signOut, signIn } from "@/auth";
 
   async function handleSignOut() {
     'use server'
-    await signOut()
+    await signOut({ redirectTo: "/" })
   }
 
   async function handleSignIn() {
