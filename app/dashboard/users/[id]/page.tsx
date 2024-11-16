@@ -1,8 +1,9 @@
 
 
-const page = () => {
+const page = ({params}: {params: {id: string}}) => {
+    const {id} = params
   return (
-    <div>user details page</div>
+    <h1 className="text-3xl">User Profile {id}</h1>
   )
 }
 
